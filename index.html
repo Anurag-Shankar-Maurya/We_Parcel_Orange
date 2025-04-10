@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Parcel</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material UI CSS -->
+    <link href="https://unpkg.com/@material-ui/core@4.12.4/umd/material-ui.development.js" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+
+    <!--Favicon-->
+    <link rel="icon" href="images/We_Parcel_favicon.png">
+</head>
+<body class="bg-gradient-to-r from-red-900 to-orange-900 text-white">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top bg-opacity-80 backdrop-blur-md">
+    <div class="container">
+        <!--        <a class="navbar-brand futuristic-text" href="#">-->
+        <!--            <span class="text-gradient">WE PARCEL</span>-->
+        <!--        </a>-->
+        <a class="navbar-brand futuristic-text" href="#">
+            <img src="images/We_Parcel_Logo.png" alt="We Parcel" width="140">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#tracking">Track</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#book">Book</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link hover-underline-animation" href="#contact">Contact</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-glow nav-button" href="#book">Book Now</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h1 class="display-3 fw-bold mb-4 futuristic-text">
+                    <span class="text-gradient">Fast. Reliable.</span><br>
+                    <span>Nationwide Delivery.</span>
+                </h1>
+                <p class="lead mb-4 opacity-80">Redefining courier services with cutting-edge technology and unmatched
+                    reliability. Your parcels, our priority.</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="#book" class="btn btn-primary btn-lg btn-glow">Book a Delivery</a>
+                    <a href="#tracking" class="btn btn-outline-light btn-lg hover-fill">Track Parcel</a>
+                </div>
+                <div class="mt-4 d-flex align-items-center">
+                    <div class="me-4">
+                        <div class="d-flex">
+                            <i class="material-icons text-yellow-400">star</i>
+                            <i class="material-icons text-yellow-400">star</i>
+                            <i class="material-icons text-yellow-400">star</i>
+                            <i class="material-icons text-yellow-400">star</i>
+                            <i class="material-icons text-yellow-400">star_half</i>
+                        </div>
+                        <p class="mb-0 small">Highly rated service</p>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="ms-4">
+                        <p class="mb-0 fw-bold">Nationwide</p>
+                        <p class="mb-0 small">Successful Deliveries</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <div class="hero-image-container">
+                        <!--                        <img src="images/img.png"-->
+                        <!--                             alt="Delivery Service" class="img-fluid rounded-lg shadow-lg">-->
+                        <video autoplay muted loop playsinline class="img-fluid rounded-lg shadow-lg">
+                            <source src="video/we_parcel_hero_video.webm" type="video/webm"/>
+                            <!-- Fallback image if video doesn't load -->
+                            <img src="images/hero-fallback.jpg" alt="Censor AI Introduction"
+                                 class="img-fluid rounded-lg shadow-lg"/>
+                        </video>
+                    </div>
+                    <div class="floating-card card-1">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-circle bg-cyan-500">
+                                <i class="material-icons">local_shipping</i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-0 small">Current Deliveries</p>
+                                <p class="mb-0 fw-bold">Active</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-circle bg-purple-500">
+                                <i class="material-icons">schedule</i>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-0 small">Average Delivery Time</p>
+                                <p class="mb-0 fw-bold">24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+</section>
+
+<!-- Tracking Section -->
+<section id="tracking" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Track Your Parcel</h2>
+            <p class="section-subtitle">Real-time updates on your delivery status</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="tracking-card">
+                    <div class="tracking-tabs-container">
+                        <ul class="nav nav-tabs tracking-tabs" id="trackingTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="track-tab" data-bs-toggle="tab"
+                                        data-bs-target="#track" type="button" role="tab" aria-controls="track"
+                                        aria-selected="true">Track order
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ship-tab" data-bs-toggle="tab" data-bs-target="#ship"
+                                        type="button" role="tab" aria-controls="ship" aria-selected="false">Ship order
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content tracking-tab-content" id="trackingTabsContent">
+                            <!-- Track Order Tab -->
+                            <div class="tab-pane fade show active" id="track" role="tabpanel"
+                                 aria-labelledby="track-tab">
+                                <h3 class="tracking-title">Track your order through</h3>
+
+                                <ul class="nav nav-pills tracking-methods mb-3" id="trackingMethods" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="mobile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile"
+                                                aria-selected="true">Mobile
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="awb-tab" data-bs-toggle="pill"
+                                                data-bs-target="#awb" type="button" role="tab" aria-controls="awb"
+                                                aria-selected="false">AWB
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="orderid-tab" data-bs-toggle="pill"
+                                                data-bs-target="#orderid" type="button" role="tab"
+                                                aria-controls="orderid" aria-selected="false">Order Id
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="lrn-tab" data-bs-toggle="pill"
+                                                data-bs-target="#lrn" type="button" role="tab" aria-controls="lrn"
+                                                aria-selected="false">LRN
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="trackingMethodsContent">
+                                    <div class="tab-pane fade show active" id="mobile" role="tabpanel"
+                                         aria-labelledby="mobile-tab">
+                                        <form id="mobile-tracking-form">
+                                            <div class="mb-3">
+                                                <input type="tel" class="form-control tracking-input"
+                                                       placeholder="Enter your mobile number" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark w-100 tracking-btn">Get OTP
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="awb" role="tabpanel" aria-labelledby="awb-tab">
+                                        <form id="awb-tracking-form">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control tracking-input"
+                                                       placeholder="Enter your AWB number" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark w-100 tracking-btn">Track Order
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="orderid" role="tabpanel"
+                                         aria-labelledby="orderid-tab">
+                                        <form id="orderid-tracking-form">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control tracking-input"
+                                                       placeholder="Enter your Order ID" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark w-100 tracking-btn">Track Order
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="lrn" role="tabpanel" aria-labelledby="lrn-tab">
+                                        <form id="lrn-tracking-form">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control tracking-input"
+                                                       placeholder="Enter your LRN number" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark w-100 tracking-btn">Track Order
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="app-download-section">
+                                    <p class="text-center mb-3">Live tracking updates & extra support on our App</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="#" class="app-download-btn">
+                                            <img src="images/PlayStore.png"
+                                                 alt="Get it on Google Play" height="20" width="200">
+                                        </a>
+                                        <a href="#" class="app-download-btn">
+                                            <img src="images/AppStore.png"
+                                                 alt="Download on the App Store" height="20" width="200">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ship Order Tab -->
+                            <div class="tab-pane fade" id="ship" role="tabpanel" aria-labelledby="ship-tab">
+                                <h3 class="tracking-title">Ship personal courier</h3>
+
+                                <div class="shipping-type-selector mb-4">
+                                    <div class="btn-group w-100" role="group">
+                                        <input type="radio" class="btn-check" name="shipping-type" id="domestic"
+                                               autocomplete="off" checked>
+                                        <label class="btn btn-outline-secondary shipping-btn" for="domestic">
+                                            <i class="material-icons">local_shipping</i> Domestic
+                                        </label>
+
+                                        <input type="radio" class="btn-check" name="shipping-type" id="international"
+                                               autocomplete="off">
+                                        <label class="btn btn-outline-secondary shipping-btn" for="international">
+                                            <i class="material-icons">flight</i> International
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <form id="shipping-form">
+                                    <div class="shipping-route">
+                                        <div class="route-marker origin">
+                                            <div class="route-icon">
+                                                <i class="material-icons">circle</i>
+                                            </div>
+                                        </div>
+                                        <div class="route-line"></div>
+                                        <div class="route-marker destination">
+                                            <div class="route-icon">
+                                                <i class="material-icons">place</i>
+                                            </div>
+                                        </div>
+
+                                        <div class="route-inputs">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control tracking-input"
+                                                       placeholder="Enter pickup pin code" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control tracking-input"
+                                                       placeholder="Enter delivery pin code" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-dark w-100 tracking-btn">Get OTP & Ship Now
+                                    </button>
+
+                                    <div class="text-center mt-3">
+                                        <a href="#" class="business-link">Sign up to ship as a business here</a>
+                                    </div>
+                                </form>
+
+                                <div class="app-download-section">
+                                    <p class="text-center mb-3">Live tracking updates & extra support on our App</p>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <a href="#" class="app-download-btn">
+                                            <img src="images/PlayStore.png"
+                                                 alt="Get it on Google Play" height="40" width="200">
+                                        </a>
+                                        <a href="#" class="app-download-btn">
+                                            <img src="images/AppStore.png"
+                                                 alt="Download on the App Store" height="40" width="200">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Live Tracking Map Section -->
+<section class="py-5 tracking-map-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title">Live Tracking</h2>
+                <p class="section-subtitle">Watch your parcel move in real-time</p>
+                <p class="mb-4">Our advanced tracking system allows you to monitor your parcel's journey from pickup to
+                    delivery. Get real-time updates, estimated delivery times, and notifications at every step.</p>
+
+                <div class="tracking-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <div class="feature-text">
+                            <h5>Real-time Location</h5>
+                            <p>See exactly where your parcel is at any moment</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="material-icons">notifications_active</i>
+                        </div>
+                        <div class="feature-text">
+                            <h5>Instant Notifications</h5>
+                            <p>Get alerts for pickup, transit, and delivery</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="material-icons">history</i>
+                        </div>
+                        <div class="feature-text">
+                            <h5>Delivery Timeline</h5>
+                            <p>View the complete journey history of your parcel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tracking-map-container">
+                    <div class="tracking-map">
+                        <div class="map-dot map-dot-1"></div>
+                        <div class="map-dot map-dot-2"></div>
+                        <div class="map-dot map-dot-3"></div>
+                        <div class="map-route"></div>
+                        <div class="map-vehicle">
+                            <i class="material-icons">local_shipping</i>
+                        </div>
+                    </div>
+                    <div class="tracking-status">
+                        <div class="status-item active">
+                            <div class="status-icon">
+                                <i class="material-icons">check_circle</i>
+                            </div>
+                            <div class="status-text">
+                                <h6>Picked Up</h6>
+                                <p>10:30 AM</p>
+                            </div>
+                        </div>
+                        <div class="status-item active">
+                            <div class="status-icon">
+                                <i class="material-icons">check_circle</i>
+                            </div>
+                            <div class="status-text">
+                                <h6>In Transit</h6>
+                                <p>01:45 PM</p>
+                            </div>
+                        </div>
+                        <div class="status-item current">
+                            <div class="status-icon">
+                                <i class="material-icons">radio_button_checked</i>
+                            </div>
+                            <div class="status-text">
+                                <h6>Out for Delivery</h6>
+                                <p>03:20 PM</p>
+                            </div>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-icon">
+                                <i class="material-icons">radio_button_unchecked</i>
+                            </div>
+                            <div class="status-text">
+                                <h6>Delivered</h6>
+                                <p>Estimated: 05:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Tailored solutions for all your delivery needs</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="material-icons">flash_on</i>
+                    </div>
+                    <h3>Same-Day Delivery</h3>
+                    <p>Swift delivery within the same day for urgent parcels.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Urban areas coverage</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Priority handling</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Real-time tracking</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-light mt-3 hover-fill">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="material-icons">schedule</i>
+                    </div>
+                    <h3>Next-Day Delivery</h3>
+                    <p>Reliable overnight delivery service to ensure timely arrival.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Nationwide coverage</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Guaranteed delivery time</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>SMS notifications</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3 btn-glow">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="material-icons">business</i>
+                    </div>
+                    <h3>Business Solutions</h3>
+                    <p>Bulk parcel pickup and delivery tailored for businesses.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>API integration</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Volume discounts</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Dedicated account manager</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-light mt-3 hover-fill">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="material-icons">calendar_today</i>
+                    </div>
+                    <h3>Scheduled Deliveries</h3>
+                    <p>Plan your deliveries in advance with flexible scheduling options.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Choose delivery date & time</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Recurring delivery options</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Calendar integration</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-light mt-3 hover-fill">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="material-icons">public</i>
+                    </div>
+                    <h3>International Shipping</h3>
+                    <p>Global delivery solutions for your international shipping needs.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Worldwide coverage</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Customs clearance</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Package insurance</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-light mt-3 hover-fill">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-4">
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="material-icons">health_and_safety</i>
+                    </div>
+                    <h3>Contactless Delivery</h3>
+                    <p>Safe and secure delivery with minimal contact for health-conscious clients.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>No-contact options</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Digital signatures</span>
+                        </div>
+                        <div class="feature">
+                            <i class="material-icons">check_circle</i>
+                            <span>Photo proof of delivery</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline-light mt-3 hover-fill">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Book a Delivery Section -->
+<section id="book" class="py-5 book-delivery-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <h2 class="section-title">Book a Delivery</h2>
+                <p class="section-subtitle">Fast, secure, and reliable delivery service</p>
+
+                <div class="booking-features">
+                    <div class="booking-feature-item">
+                        <div class="feature-icon-box">
+                            <i class="material-icons">security</i>
+                        </div>
+                        <div>
+                            <h4>Secure Handling</h4>
+                            <p>Your parcels are handled with utmost care and security</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-feature-item">
+                        <div class="feature-icon-box">
+                            <i class="material-icons">payments</i>
+                        </div>
+                        <div>
+                            <h4>Transparent Pricing</h4>
+                            <p>No hidden fees, pay only for what you need</p>
+                        </div>
+                    </div>
+
+                    <div class="booking-feature-item">
+                        <div class="feature-icon-box">
+                            <i class="material-icons">support_agent</i>
+                        </div>
+                        <div>
+                            <h4>24/7 Support</h4>
+                            <p>Our customer support team is always available to help</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="booking-form-container">
+                    <div class="booking-tabs-container">
+                        <ul class="nav nav-tabs booking-tabs" id="bookingTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="domestic-tab" data-bs-toggle="tab"
+                                        data-bs-target="#domestic-booking" type="button" role="tab"
+                                        aria-controls="domestic-booking" aria-selected="true">Domestic
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="international-tab" data-bs-toggle="tab"
+                                        data-bs-target="#international-booking" type="button" role="tab"
+                                        aria-controls="international-booking" aria-selected="false">International
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content booking-tab-content" id="bookingTabsContent">
+                            <!-- Domestic Booking Tab -->
+                            <div class="tab-pane fade show active" id="domestic-booking" role="tabpanel"
+                                 aria-labelledby="domestic-tab">
+                                <form id="domestic-booking-form">
+                                    <div class="booking-route">
+                                        <div class="route-marker origin">
+                                            <div class="route-icon">
+                                                <i class="material-icons">circle</i>
+                                            </div>
+                                        </div>
+                                        <div class="route-line"></div>
+                                        <div class="route-marker destination">
+                                            <div class="route-icon">
+                                                <i class="material-icons">place</i>
+                                            </div>
+                                        </div>
+
+                                        <div class="route-inputs">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control booking-input"
+                                                       placeholder="Enter pickup pin code" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control booking-input"
+                                                       placeholder="Enter delivery pin code" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-dark w-100 booking-btn">Get OTP & Book Now
+                                    </button>
+
+                                    <div class="text-center mt-3">
+                                        <a href="#" class="business-link">Sign up for business shipping here</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- International Booking Tab -->
+                            <div class="tab-pane fade" id="international-booking" role="tabpanel"
+                                 aria-labelledby="international-tab">
+                                <form id="international-booking-form">
+                                    <div class="booking-route">
+                                        <div class="route-marker origin">
+                                            <div class="route-icon">
+                                                <i class="material-icons">circle</i>
+                                            </div>
+                                        </div>
+                                        <div class="route-line"></div>
+                                        <div class="route-marker destination">
+                                            <div class="route-icon">
+                                                <i class="material-icons">public</i>
+                                            </div>
+                                        </div>
+
+                                        <div class="route-inputs">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control booking-input"
+                                                       placeholder="Enter pickup pin code" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <select class="form-select booking-input" required>
+                                                    <option value="" selected disabled>Select delivery country</option>
+                                                    <option value="us">United States</option>
+                                                    <option value="uk">United Kingdom</option>
+                                                    <option value="ca">Canada</option>
+                                                    <option value="au">Australia</option>
+                                                    <option value="sg">Singapore</option>
+                                                    <option value="ae">UAE</option>
+                                                    <option value="other">Other Countries</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-dark w-100 booking-btn">Get Quote & Book Now
+                                    </button>
+
+                                    <div class="text-center mt-3">
+                                        <a href="#" class="business-link">View international shipping rates</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-5 how-it-works-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple steps to get your parcel delivered</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-connector"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="material-icons">edit_location</i>
+                        </div>
+                        <h4>Book</h4>
+                        <p>Enter pickup and delivery locations to book your delivery</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="material-icons">inventory_2</i>
+                        </div>
+                        <h4>Pack</h4>
+                        <p>Package your items securely for safe transportation</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="material-icons">local_shipping</i>
+                        </div>
+                        <h4>Ship</h4>
+                        <p>Our courier will pick up and transport your parcel</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="material-icons">check_circle</i>
+                        </div>
+                        <h4>Deliver</h4>
+                        <p>Your parcel is delivered safely to the destination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#book" class="btn btn-primary btn-lg btn-glow">Book Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 features-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Features that set us apart</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="material-icons">speed</i>
+                    </div>
+                    <h4>Lightning Fast</h4>
+                    <p>Our optimized routes and dedicated fleet ensure the quickest possible delivery times.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="material-icons">verified_user</i>
+                    </div>
+                    <h4>Secure & Safe</h4>
+                    <p>Your parcels are handled with care and fully insured against damage or loss.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="material-icons">smartphone</i>
+                    </div>
+                    <h4>Mobile App</h4>
+                    <p>Track, book, and manage all your deliveries from our easy-to-use mobile application.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="material-icons">support_agent</i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Our customer service team is available round the clock to assist with any queries.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="material-icons">eco</i>
+                    </div>
+                    <h4>Eco-Friendly</h4>
+                    <p>We're committed to reducing our carbon footprint with electric vehicles and sustainable
+                        practices.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="material-icons">payments</i>
+                    </div>
+                    <h4>Transparent Pricing</h4>
+                    <p>No hidden fees or surprise charges. Pay only for what you need with our clear pricing
+                        structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-stats mt-5">
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="stat-counter">
+                        <div class="counter-value">
+                            <span class="counter">98</span>%
+                        </div>
+                        <p>On-time Delivery</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-counter">
+                        <div class="counter-value">
+                            <span class="counter">50</span>+
+                        </div>
+                        <p>Cities Covered</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-counter">
+                        <div class="counter-value">
+                            <span class="counter">24</span>/7
+                        </div>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-counter">
+                        <div class="counter-value">
+                            <span class="counter">4.8</span>/5
+                        </div>
+                        <p>Customer Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="about-image-container">
+                    <img src="images/img_about.png"
+                         alt="About We Parcel" class="img-fluid rounded-lg">
+                    <div class="about-shape"></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="section-title">About We Parcel</h2>
+                <p class="section-subtitle">Redefining the standards of modern delivery services</p>
+                <p class="mt-4">We Parcel is a fast-growing courier delivery service committed to providing quick,
+                    reliable, and convenient parcel delivery solutions for both businesses and individuals. With a focus
+                    on efficiency, safety, and customer satisfaction, We Parcel is redefining the standards of modern
+                    delivery services.</p>
+                <p>Founded with a vision to revolutionize the logistics industry, we've grown from a small local
+                    operation to a nationwide network of delivery professionals. Our cutting-edge technology and
+                    dedicated team ensure that every parcel reaches its destination safely and on time.</p>
+                <div class="about-stats mt-4">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <h3>Years</h3>
+                                <p>of Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <h3>Team</h3>
+                                <p>Delivery Agents</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <h3>Cities</h3>
+                                <p>Covered</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-item">
+                                <h3>On-time</h3>
+                                <p>Delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="#" class="btn btn-primary btn-glow me-3">Learn More</a>
+                    <a href="#contact" class="btn btn-outline-light hover-fill">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Team Section -->
+<section id="team" class="py-5 team-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">The people behind our success</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" class="img-fluid">
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Robert Johnson</h4>
+                        <p>CEO & Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" class="img-fluid">
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Sarah Williams</h4>
+                        <p>Operations Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Team Member" class="img-fluid">
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Michael Chen</h4>
+                        <p>Technology Head</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Team Member" class="img-fluid">
+                        <div class="team-social">
+                            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Priya Sharma</h4>
+                        <p>Customer Relations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Trusted by thousands of businesses and individuals</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </div>
+                <p class="testimonial-text">"We Parcel has transformed our e-commerce business with their reliable
+                    same-day delivery service. Our customers love the real-time tracking feature!"</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson"
+                         class="testimonial-avatar">
+                    <div>
+                        <h5>Sarah Johnson</h5>
+                        <p>E-commerce Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </div>
+                <p class="testimonial-text">"I've been using We Parcel for my business logistics for over 2 years now.
+                    Their API integration has streamlined our shipping process completely."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Michael Chen"
+                         class="testimonial-avatar">
+                    <div>
+                        <h5>Michael Chen</h5>
+                        <p>Tech Startup Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star_half</i>
+                </div>
+                <p class="testimonial-text">"The customer service at We Parcel is exceptional. They went above and
+                    beyond to ensure my time-sensitive documents were delivered on time."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya Sharma"
+                         class="testimonial-avatar">
+                    <div>
+                        <h5>Priya Sharma</h5>
+                        <p>Legal Professional</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </div>
+                <p class="testimonial-text">"As a small business owner, reliable delivery is crucial. We Parcel has
+                    never let me down. Their transparent pricing and punctual service keep me coming back."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Wilson"
+                         class="testimonial-avatar">
+                    <div>
+                        <h5>David Wilson</h5>
+                        <p>Retail Store Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </div>
+                <p class="testimonial-text">"I needed to send an urgent package across the country, and We Parcel
+                    delivered it the next day as promised. The tracking updates kept me informed throughout."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Jennifer Lopez"
+                         class="testimonial-avatar">
+                    <div>
+                        <h5>Jennifer Lopez</h5>
+                        <p>Marketing Executive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-5 faq-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="accordion faq-accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How do I track my parcel?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can track your parcel using the tracking number provided in your confirmation email.
+                                Simply enter this number in the tracking section of our website or mobile app.
+                                Alternatively, you can track using your mobile number, AWB, Order ID, or LRN.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What are your delivery hours?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our standard delivery hours are from 9:00 AM to 9:00 PM, seven days a week. For specific
+                                time-slot deliveries, you can select your preferred time during the booking process,
+                                subject to availability.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How is the delivery cost calculated?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Delivery costs are calculated based on distance, package dimensions, weight, and the
+                                type of service selected (same-day, next-day, etc.). You can get an instant quote by
+                                entering your pickup and delivery locations on our website or app.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What if my parcel is damaged or lost?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                All parcels shipped with We Parcel are insured against damage or loss. In the unlikely
+                                event of an issue, please contact our customer support team within 7 days of the
+                                delivery date. We'll investigate and process your claim promptly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Can I reschedule my delivery?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, you can reschedule your delivery through our website or mobile app. Go to the
+                                tracking section, enter your tracking details, and select the reschedule option. Please
+                                note that rescheduling should be done at least 3 hours before the scheduled delivery
+                                time.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Do you offer international shipping?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we offer international shipping to over 100 countries worldwide. Rates and delivery
+                                times vary by destination. You can get a quote and book international shipments through
+                                our website or by contacting our customer service team.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p>Can't find what you're looking for?</p>
+            <a href="#contact" class="btn btn-primary btn-glow">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- App Download Section -->
+<section class="py-5 app-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="section-title">Download Our App</h2>
+                <p class="section-subtitle">Track, book, and manage deliveries on the go</p>
+                <p class="mb-4">Get the We Parcel mobile app for a seamless delivery experience. Book shipments, track
+                    parcels in real-time, receive instant notifications, and manage all your deliveries from the palm of
+                    your hand.</p>
+
+                <div class="app-features">
+                    <div class="app-feature">
+                        <i class="material-icons">touch_app</i>
+                        <span>Easy Booking</span>
+                    </div>
+                    <div class="app-feature">
+                        <i class="material-icons">location_on</i>
+                        <span>Real-time Tracking</span>
+                    </div>
+                    <div class="app-feature">
+                        <i class="material-icons">notifications_active</i>
+                        <span>Instant Notifications</span>
+                    </div>
+                    <div class="app-feature">
+                        <i class="material-icons">history</i>
+                        <span>Delivery History</span>
+                    </div>
+                </div>
+
+                <div class="app-download-buttons mt-4">
+                    <a href="#" class="app-btn">
+                        <img src="images/PlayStore.png"
+                             alt="Get it on Google Play" height="60" width="200">
+                    </a>
+                    <a href="#" class="app-btn">
+                        <img src="images/AppStore.png"
+                             alt="Download on the App Store" height="60" width="200">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="app-mockup-container">
+                    <div class="app-mockup">
+                        <img src="images/hero-fallback.jpg"
+                             alt="We Parcel App" class="img-fluid">
+                    </div>
+                    <div class="app-mockup-shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+                <div class="contact-info mt-4">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <div>
+                            <h5>Our Headquarters</h5>
+                            <p>123 Delivery Street, Tech Park, Cityville, 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="material-icons">email</i>
+                        </div>
+                        <div>
+                            <h5>Email Us</h5>
+                            <p>contact@weparcel.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="material-icons">phone</i>
+                        </div>
+                        <div>
+                            <h5>Call Us</h5>
+                            <p>+91-9876543210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="material-icons">schedule</i>
+                        </div>
+                        <div>
+                            <h5>Working Hours</h5>
+                            <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links mt-4">
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                          placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-100 btn-glow">Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="container-fluid p-0">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14016.2121479309!2d77.35719915000001!3d28.620125999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5456ef36d9f%3A0x3b7191b1286136c8!2sSector%2062%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1744219018167!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-overlay">
+                <div class="map-card">
+                    <h4>Visit Our Office</h4>
+                    <p><i class="material-icons">location_on</i> 123 Delivery Street, Tech Park, Cityville, 12345</p>
+                    <a href="https://goo.gl/maps/123" target="_blank" class="btn btn-primary btn-sm">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<!--<section class="py-5 newsletter-section">-->
+<!--    <div class="container">-->
+<!--        <div class="newsletter-container">-->
+<!--            <div class="row align-items-center">-->
+<!--                <div class="col-lg-6 mb-4 mb-lg-0">-->
+<!--                    <h2>Subscribe to Our Newsletter</h2>-->
+<!--                    <p>Stay updated with our latest news, offers, and delivery tips</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-6">-->
+<!--                    <form class="newsletter-form">-->
+<!--                        <div class="input-group">-->
+<!--                            <input type="email" class="form-control" placeholder="Your email address" required>-->
+<!--                            <button class="btn btn-primary btn-glow" type="submit">Subscribe</button>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- Footer -->
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <!--                <a class="footer-brand futuristic-text mb-4 d-block" href="#">-->
+                <!--                    <span class="text-gradient">WE PARCEL</span>-->
+                <!--                </a>-->
+                <a class="navbar-brand futuristic-text" href="#">
+                    <img src="images/We_Parcel_Logo.png" alt="We Parcel" width="140">
+                </a>
+                <p class="mb-4">We Parcel is a fast-growing courier delivery service committed to providing quick,
+                    reliable, and convenient parcel delivery solutions.</p>
+                <div class="download-apps">
+                    <p class="mb-2">Download our mobile app</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm hover-fill">
+                            <i class="material-icons me-1">android</i> Android
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm hover-fill">
+                            <i class="material-icons me-1">apple</i> iOS
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <h5 class="footer-title">Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tracking">Track Parcel</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#book">Book a Delivery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+                <h5 class="footer-title">Services</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Same-Day Delivery</a></li>
+                    <li><a href="#">Next-Day Delivery</a></li>
+                    <li><a href="#">Scheduled Delivery</a></li>
+                    <li><a href="#">Business Solutions</a></li>
+                    <li><a href="#">International Shipping</a></li>
+                    <li><a href="#">Contactless Delivery</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="footer-title">Newsletter</h5>
+                <p>Subscribe to our newsletter for updates and offers</p>
+                <form class="newsletter-form mt-3">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                        <button class="btn btn-primary btn-glow" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <p class="mb-2">We accept</p>
+                    <div class="payment-methods">
+                        <i class="material-icons">credit_card</i>
+                        <i class="material-icons">account_balance</i>
+                        <i class="material-icons">payment</i>
+                        <i class="material-icons">account_balance_wallet</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4 mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2025 We Parcel. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top btn-glow btn-primary">
+    <i class="material-icons">arrow_upward</i>
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Anime.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
