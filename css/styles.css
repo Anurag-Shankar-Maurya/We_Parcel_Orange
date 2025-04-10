@@ -1854,7 +1854,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575.98px) {
     .hero-section {
-        padding-top: 80px;
+        padding-top: 100px;
     }
 
     .section-title {
