@@ -556,64 +556,35 @@ function initFaqAccordion() {
 
 // Initialize testimonial slider
 function initTestimonialSlider() {
-    const testimonialSlider = document.querySelector('.testimonial-slider');
+    const slider = document.querySelector('.testimonial-slider');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const totalCards = cards.length;
 
-    if (testimonialSlider) {
-        let isDown = false;
-        let startX;
-        let scrollLeft;
+    let currentIndex = 0;
 
-        testimonialSlider.addEventListener('mousedown', (e) => {
-            isDown = true;
-            testimonialSlider.style.cursor = 'grabbing';
-            startX = e.pageX - testimonialSlider.offsetLeft;
-            scrollLeft = testimonialSlider.scrollLeft;
+    function updateHighlight() {
+        cards.forEach((card, index) => {
+            card.classList.remove('highlight');
         });
-
-        testimonialSlider.addEventListener('mouseleave', () => {
-            isDown = false;
-            testimonialSlider.style.cursor = 'grab';
-        });
-
-        testimonialSlider.addEventListener('mouseup', () => {
-            isDown = false;
-            testimonialSlider.style.cursor = 'grab';
-        });
-
-        testimonialSlider.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - testimonialSlider.offsetLeft;
-            const walk = (x - startX) * 2;
-            testimonialSlider.scrollLeft = scrollLeft - walk;
-        });
-
-        // Set initial cursor style
-        testimonialSlider.style.cursor = 'grab';
-
-        // Animate testimonial cards on scroll
-        const testimonialCards = document.querySelectorAll('.testimonial-card');
-        const testimonialObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        anime({
-                            targets: entry.target,
-                            opacity: [0, 1],
-                            translateY: [50, 0],
-                            easing: 'easeOutQuad',
-                            duration: 800
-                        });
-                    }, Array.from(testimonialCards).indexOf(entry.target) * 100);
-                    testimonialObserver.unobserve(entry.target);
-                }
-            });
-        }, {threshold: 0.1});
-
-        testimonialCards.forEach(card => {
-            testimonialObserver.observe(card);
-        });
+        const highlightIndex = (currentIndex + 1) % totalCards;
+        cards[highlightIndex].classList.add('highlight');
     }
+
+    function scrollNext() {
+        currentIndex = (currentIndex + 1) % totalCards;
+        const scrollAmount = cards[0].offsetWidth + 20; // card width + gap
+        slider.scrollTo({
+            left: scrollAmount * currentIndex,
+            behavior: 'smooth',
+        });
+        updateHighlight();
+    }
+
+    // Highlight first center card initially
+    updateHighlight();
+
+    // Loop every 3 seconds
+    setInterval(scrollNext, 3000);
 }
 
 // Initialize team hover effects
